@@ -1,0 +1,35 @@
+*** Instructions ***
+The abstract should include the title of your research paper and the names of the authors of the paper. It also should address ALL of following:
+
+Problem statement: What problem are you trying to solve?
+Motivation: Why do we care about the problem and the results?
+Approach: How did you go about solving the problem or making progress on the problem?
+Results: Does your approach completely solve the problem or does it do better than previous approaches?
+Conclusion: What are the implications of your answer?
+
+See http://users.ece.cmu.edu/~koopman/essays/abstract.html for more information about how to write an abstract.
+
+The text of your abstract (not counting the title and names of the authors) is limited to one paragraph of no more than 150 words. Submit it as a pdf file.
+
+NOTE: Only ONE of the authors of a research paper team should submit the abstract!
+
+*** Original Idea ***
+One class of data is measured or simulated data with error estimation.  This data can consist of many continuous dimensions for which values are available only at discrete points.  Increasing the number of discrete points at which the data is available can be expensive or even impossible to obtain.  To properly interpolate or extrapolate from these discrete points becomes complex when the various dimensions do not follow the same type of fit (linear, logarithmic, polynomial, etc.).  Properly tracking estimated error also can be problematic.  We propose to research using data mining techniques to develop an expert system that will both propose the proper interpolation and extrapolation techniques for each dimension (ideally by region) as well as provide error estimation for the interpolated or extrapolated value.  We may also, or instead, focus on relationships between data dimensions through modeling with known techniques.  In this way, we could also interpolate and extrapolate data based on models created using any number of existing data mining algorithms.
+
+*** New Abstract Data ***
+Title: "On Building A Data Fitting System Using Ad Hoc Models"
+Author Names: Amy Briggs, Andrew Fallgren, George Rush
+
+Problem statement: What problem are you trying to solve?
+    * We are attempting to properly interpolate or extrapolate from the discrete points in measured or simulated data. This becomes complex when the various dimensions do not follow the same type of fit (linear, logarithmic, polynomial, etc.). Properly tracking estimated error also can be problematic.
+Motivation: Why do we care about the problem and the results?
+    * One class of data is measured or simulated data with error estimation. This data can consist of many continuous dimensions for which values are available only at discrete points. Increasing the number of discrete points at which the data is available can be expensive or even impossible to obtain, but it can still be useful to predict data trends through extrapolation or interpolation.
+Approach: How did you go about solving the problem or making progress on the problem?
+    * We focused on building models specific to the given data set using known data mining techniques. Using those models, we tried to create new data points that fit the same model within a certain amount of variance.
+Results: Does your approach completely solve the problem or does it do better than previous approaches?
+    * Previous approaches mostly seemed to focus on extrapolating data for applications in a specific field or building purely numerical models. Our approach is simply a new way of solving the problem that may work better depending on the data set.
+Conclusion: What are the implications of your answer?
+    * Using our method, one can extrapolate or interpolate data which is sparse or follows unusual patterns. Any field with these types of data sets can benefit from the research.
+    
+Abstract:
+One class of data is measured or simulated data with error estimation. This data can consist of many continuous dimensions for which values are available only at discrete points. Increasing the number of discrete points at which the data is available can be expensive or even impossible to obtain, but it can still be useful to predict data trends through extrapolation or interpolation. Unfortunately, this is difficult when the various dimensions do not follow the same type of fit (linear, logarithmic, polynomial, etc.). Our approach focuses on building models using known data mining techniques, and those models are then used to create new data points that follow existing trends. This is in contrast to previous approaches which mostly seemed to focus on extrapolating data for specific applications or using purely numerical models. By using this approach, any data set which is sparse or exhibits unusual patterns can be analyzed effectively.

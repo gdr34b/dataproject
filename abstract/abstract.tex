@@ -1,0 +1,30 @@
+\documentclass[12pt,a4paper]{report}
+\setcounter{secnumdepth}{0}
+\usepackage{titlesec}
+\titleformat{\section}[block]{\Large\bfseries\filcenter}{}{1em}{}
+\titleformat{\subsection}[block]{\Large\bfseries\filcenter}{}{1em}{}
+\usepackage{amsmath}
+\usepackage{helvet}
+\renewcommand{\familydefault}{\sfdefault}
+\usepackage[pdftex]{graphicx}
+\usepackage[table]{xcolor}
+
+\author{
+    Amy Briggs \\
+    \texttt{abbr5@mst.edu}
+    \and
+    Andrew Fallgren \\
+    \texttt{ajffk6@mst.edu}
+    \and
+    George Rush \\
+    \texttt{gdr34b@mst.edu}
+}
+\title{On Building A Data Fitting System Using Ad Hoc Models}
+\begin{document}
+\maketitle
+
+\pagebreak
+\section{Abstract}
+One class of data is measured or simulated data with error estimation. This data can consist of many continuous dimensions for which values are available only at discrete points. Increasing the number of discrete points at which the data is available can be expensive or even impossible to obtain, but it can still be useful to predict data trends through extrapolation or interpolation. Unfortunately, this is difficult when the various dimensions do not follow the same type of fit (linear, logarithmic, polynomial, etc.). Our approach focuses on building models using known data mining techniques, and those models are then used to create new data points that follow existing trends. This is in contrast to previous approaches which mostly seemed to focus on extrapolating data for specific applications or using purely numerical models. By using this approach, any data set which is sparse or exhibits unusual patterns can be analyzed effectively.
+
+\end{document}
