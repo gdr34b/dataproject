@@ -1,11 +1,12 @@
 #!/usr/bin/python
 
-import math, Orange, random, sys, traceback
+import math, Orange, os, random, sys, traceback
 
 ################################################################################
 # Global Variables
 ################################################################################
 NEW_DATA_PER_LEAF = 0.5
+RESULT_FILE_DIRECTORY = "./results/"
 
 ################################################################################
 # Function Definitions
@@ -69,6 +70,16 @@ def buildNewInstances(dataTable, leaf):
 def addNewDataToTable(dataTable, newData):
     for item in newData:
         dataTable.append(item)
+        
+def outputTreesToDotFiles(treeClassifier, newTreeClassifier):
+    if not os.path.isdir(RESULT_FILE_DIRECTORY):
+        os.makedirs(RESULT_FILE_DIRECTORY)
+    contents = os.listdir(RESULT_FILE_DIRECTORY)
+    fileNumber = len(contents) / 2
+    oldTreeFileName = "old_tree_" + str(fileNumber) + ".dot"
+    newTreeFileName = "new_tree_" + str(fileNumber) + ".dot"
+    treeClassifier.dot(file_name=RESULT_FILE_DIRECTORY + oldTreeFileName, leaf_shape="oval", node_shape="oval")
+    newTreeClassifier.dot(file_name=RESULT_FILE_DIRECTORY + newTreeFileName, leaf_shape="oval", node_shape="oval")
 
 ################################################################################
 # Main Script
@@ -87,6 +98,8 @@ if __name__ == "__main__":
         addNewDataToTable(irisData, newData)
         # build another decision tree including the new instances
         newTreeClassifier = Orange.classification.tree.TreeLearner(irisData, store_instances=True)
+        # output decision trees to DOT files (used by Graphviz)
+        outputTreesToDotFiles(treeClassifier, newTreeClassifier)
         # somehow compare the new data model to the old one
         print("*** Old Decision Tree ***\n" + str(treeClassifier) + \
             "\n*** New Decision Tree ***\n" + str(newTreeClassifier))
