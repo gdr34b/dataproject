@@ -50,3 +50,9 @@ def outputTreeToDotFile(treeClassifier, resultFileDirectory, filePrefix=''):
     dotFileName = filePrefix + "_" + str(fileNumber) + ".dot"
     treeClassifier.dot(file_name=resultFileDirectory + dotFileName, leaf_shape="oval", node_shape="oval")
     
+def getModelAccuracy(treeClassifier, data):
+    correct = 0
+    for item in data:
+        if treeClassifier(item) == item.get_class():
+            correct += 1
+    return float(correct) / float(len(data))

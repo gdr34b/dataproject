@@ -9,6 +9,8 @@ import tree_functions as TREE
 ################################################################################
 NEW_DATA_PER_LEAF = 0.5
 RESULT_FILE_DIRECTORY = "./results/"
+OUTPUT_DOT_FILES = False
+MAX_DEPTH = 3
 
 ################################################################################
 # Function Definitions
@@ -28,6 +30,16 @@ def interpolateLeafData(dataTable, leaf):
         orangeInstance = Orange.data.Instance(domain, newInstance)
         newData.append(orangeInstance)
     return newData
+    
+def compareTrees(treeClassifier, combinedTreeClassifier, irisData, combinedData):
+    print( \
+        "*** Original Data Model Accuracy ***" + \
+        "\nOriginal data: " + str(TREE.getModelAccuracy(treeClassifier, irisData)) + \
+        "\nCombined data: " + str(TREE.getModelAccuracy(treeClassifier, combinedData)) + \
+        "\n\n*** Combined Data Model Accuracy ***" + \
+        "\nOriginal data: " + str(TREE.getModelAccuracy(combinedTreeClassifier, irisData)) + \
+        "\nCombined data: " + str(TREE.getModelAccuracy(combinedTreeClassifier, combinedData)) \
+        )
         
 ################################################################################
 # Main Script
@@ -37,7 +49,7 @@ if __name__ == "__main__":
         # load data into table
         irisData = Orange.data.Table("iris")
         # create decision tree
-        treeClassifier = Orange.classification.tree.TreeLearner(irisData, store_instances=True)
+        treeClassifier = Orange.classification.tree.TreeLearner(irisData, store_instances=True, max_depth=MAX_DEPTH)
         # interpolate new data
         leafNodes = TREE.getLeafNodes(treeClassifier.tree)
         newData = []
@@ -48,12 +60,13 @@ if __name__ == "__main__":
         for item in newData:
             combinedData.append(item)
         # build another decision tree including the new instances
-        combinedTreeClassifier = Orange.classification.tree.TreeLearner(combinedData, store_instances=True)
+        combinedTreeClassifier = Orange.classification.tree.TreeLearner(combinedData, store_instances=True, max_depth=MAX_DEPTH)
         # output decision trees to DOT files (used by Graphviz)
-        TREE.outputTreeToDotFile(treeClassifier, RESULT_FILE_DIRECTORY, filePrefix='X1_original')
-        TREE.outputTreeToDotFile(combinedTreeClassifier, RESULT_FILE_DIRECTORY, filePrefix='X1_combined')
+        if OUTPUT_DOT_FILES:
+            TREE.outputTreeToDotFile(treeClassifier, RESULT_FILE_DIRECTORY, filePrefix='X1_original')
+            TREE.outputTreeToDotFile(combinedTreeClassifier, RESULT_FILE_DIRECTORY, filePrefix='X1_combined')
         # compare accuracy of decision trees
-        
+        compareTrees(treeClassifier, combinedTreeClassifier, irisData, combinedData)
     except:
         traceback.print_exc(file=sys.stdout)
     
