@@ -135,7 +135,34 @@ This is a subsubsection.
 Another section. I am citing something random \cite{bowman:reasoning}.
 
 \section{Methodology}
-Another section.
+\subsection{Decision Tree Interpolation}
+Decision Tree Interpolation follows this process:
+\begin{enumerate}
+    \item Build a decision tree from the original data.
+    \item For each leaf node in the tree:
+    \begin{enumerate}
+        \item Obtain all attribute values for associated data instances.
+        \item Define ranges for attribute values.
+        \begin{itemize}
+            \item For numeric attributes, define the range using minimum and maximum values.
+            \item For discrete attributes, define the range as all distinct values.
+        \end{itemize}
+        \item Build random data points within the ranges.
+    \end{enumerate}
+\end{enumerate}
+Note that the number of data points created per leaf node is proportional to the number of data points already classified by that leaf node. This ensures that data density will increase per leaf node, but it will remain the same \textit{relative} to other leaf nodes. Also, the generated data is random, but the values must fall within the ranges specified by data instances already classified by each leaf node. This ensures that any generated data will be classified the same way under the original data model.
+
+\subsection{Interpolated Data Validation}
+All interpolated data is validated through this process:
+\begin{enumerate}
+    \item Interpolated data is combined with the original data.
+    \item A new decision tree is built based on the combined data.
+    \item Both the new and original decision trees are compared for accuracy against the combined and original data sets.
+\end{enumerate}
+Note that any decision tree with an arbitrarily large maximum depth can classify data with perfect accuracy. Defining a low maximum depth means that classification is imperfect, and it is under these conditions that differences in the quality of different decision trees becomes apparent.
+
+\subsection{Experiment Procedure}
+Details about experiment variables go here.
 
 \section{Results}
 Another section.
