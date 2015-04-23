@@ -1,12 +1,17 @@
-#!/usr/bin/python
+ #!/usr/bin/python
 
 import math, Orange, os, random, sys, traceback
+from scipy import stats
+from scipy.optimize import curve_fit
+import numpy as np
+
 
 ################################################################################
 # Global Variables
 ################################################################################
 NEW_DATA_PER_LEAF = 0.5
 RESULT_FILE_DIRECTORY = "./results/"
+NUMBINS = 10
 
 ################################################################################
 # Function Definitions
@@ -46,10 +51,21 @@ def getValueRanges(leaf):
                     'max': max(eachList)})
             # else, store all possible values
             else:
+                # I changed this so it isn't a set so that you draw from the data in proportion to what it is in the sample
                 valueRanges.append({ \
                     'type': eachList[0].var_type, \
-                    'values': set([str(x) for x in eachList])})
+                    'values': [str(x) for x in eachList]})
         return valueRanges
+        
+def getAllValues(leaf):
+    if len(leaf.instances) > 0:
+        valueLists = []
+        for value in leaf.instances[0]:
+            valueLists.append([])
+        for item in leaf.instances:
+            for i in range(len(item)):
+                valueLists[i].append(item[i])
+    return valueLists
     
 def buildNewInstances(dataTable, leaf):
     newData = []
@@ -62,6 +78,32 @@ def buildNewInstances(dataTable, leaf):
             if eachRange['type'] == Orange.feature.Type.Continuous:
                 newInstance.append(random.uniform(eachRange['min'], eachRange['max']))
             else:
+                newInstance.append(random.sample(eachRange['values'], 1)[0])
+        orangeInstance = Orange.data.Instance(domain, newInstance)
+        newData.append(orangeInstance)
+    return newData
+    
+def ajBuildNewInstances(dataTable, leaf)    :
+    newData = []
+    domain = dataTable.domain
+    valueRanges = getValueRanges(leaf)
+    allValues = getAllValues(leaf)
+    numOfNewInstances = int(math.floor(len(leaf.instances) * NEW_DATA_PER_LEAF))
+    for i in range(numOfNewInstances):
+        newInstance = []
+        for j, eachRange in enumerate(valueRanges):
+            if eachRange['type'] == Orange.feature.Type.Continuous:
+                # Determine what type of data it is
+                #average = sum(allValues[i])/len(allValues[i])
+                hist, bin_edges = np.histogram(allValues[j], bins=NUMBINS, density=True)
+                y_hist = hist.cumsum()/hist.cumsum().max()
+                mRand = random.random()
+                counter = 1
+                while mRand > y_hist[counter]:
+                    counter += 1
+                newInstance.append(random.uniform(bin_edges[counter-1], bin_edges[counter]))
+            else:
+                #if it is discrete, the change I made in get value range will make it select from a distribution
                 newInstance.append(random.sample(eachRange['values'], 1)[0])
         orangeInstance = Orange.data.Instance(domain, newInstance)
         newData.append(orangeInstance)
@@ -94,7 +136,7 @@ if __name__ == "__main__":
         leafNodes = getLeafNodes(treeClassifier.tree)
         newData = []
         for leaf in leafNodes:
-            newData += buildNewInstances(irisData, leaf)
+            newData += ajBuildNewInstances(irisData, leaf)
         addNewDataToTable(irisData, newData)
         # build another decision tree including the new instances
         newTreeClassifier = Orange.classification.tree.TreeLearner(irisData, store_instances=True)
