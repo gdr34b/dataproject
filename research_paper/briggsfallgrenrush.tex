@@ -110,14 +110,14 @@
 
 \maketitle
 \begin{abstract}
-One class of data is measured or simulated data with error estimation. This data can consist of many continuous dimensions for which values are available only at discrete points. Increasing the number of discrete points at which the data is available can be expensive or even impossible to obtain, but it can still be useful to predict data trends through extrapolation or interpolation. Unfortunately, this is difficult when the various dimensions do not follow the same type of fit (linear, logarithmic, polynomial, etc.). Our approach focuses on building models using known data mining techniques, and those models are then used to create new data points that follow existing trends. This is in contrast to previous approaches which mostly seemed to focus on extrapolating data for specific applications or using purely numerical models. By using this approach, any data set which is sparse or exhibits unusual patterns can be analyzed effectively.
+One class of data is measured or simulated data with error estimation. This data can consist of many continuous dimensions for which values are available only at discrete points. Increasing the number of discrete points at which the data is available can be expensive or even impossible to obtain, but it can still be useful for predicting data trends. Unfortunately, this is difficult when the various dimensions do not follow the same type of fit (linear, logarithmic, polynomial, etc.). Our approach focuses on building decision trees and using them to interpolate new data points that follow existing trends. This is in contrast to previous methods which focused on extrapolating data for specific applications or using purely numerical regression models. By using this approach, sparse data sets or those that exhibit unusual patterns can be analyzed effectively.
 \end{abstract}
 
 \category{H.2.8}{Database Management}{Database Applications}[data mining]
 
 \terms{Algorithms}
 
-\keywords{data mining, sparse data, interpolation, extrapolation}
+\keywords{data mining, sparse data, interpolation}
 
 \section{Introduction}
 Outline goes here.
@@ -147,19 +147,19 @@ Decision Tree Interpolation follows this process:
             \item For numeric attributes, define the range using minimum and maximum values.
             \item For discrete attributes, define the range as all distinct values.
         \end{itemize}
-        \item Build random data points within the ranges.
+        \item Calculate the distribution of all associated data instances.
+        \item Create new data points within the ranges that match the statistical distribution.
     \end{enumerate}
 \end{enumerate}
-Note that the number of data points created per leaf node is proportional to the number of data points already classified by that leaf node. This ensures that data density will increase per leaf node, but it will remain the same \textit{relative} to other leaf nodes. Also, the generated data is random, but the values must fall within the ranges specified by data instances already classified by each leaf node. This ensures that any generated data will be classified the same way under the original data model.
+Note that the number of data points created per leaf node is proportional to the number of data points already classified by that leaf node. This ensures that any interpolated data will follow the overall data distribution, at least relative to the data density per leaf node. 
 
 \subsection{Interpolated Data Validation}
 All interpolated data is validated through this process:
 \begin{enumerate}
-    \item Interpolated data is combined with the original data.
-    \item A new decision tree is built based on the combined data.
-    \item Both the new and original decision trees are compared for accuracy against the combined and original data sets.
+    \item A new decision tree is built based on the interpolated data. Note that the original data is \textit{not} included here.
+    \item Both the new and original decision trees are compared for accuracy against the new and original data sets.
 \end{enumerate}
-Note that any decision tree with an arbitrarily large maximum depth can classify data with perfect accuracy. Defining a low maximum depth means that classification is imperfect, and it is under these conditions that differences in the quality of different decision trees becomes apparent.
+Note that any decision tree with an arbitrarily large maximum depth can classify data with perfect accuracy. Defining a low maximum depth means that classification is imperfect, and it is under these conditions that differences in the quality of different decision trees become apparent.
 
 \subsection{Experiment Procedure}
 Details about experiment variables go here.
