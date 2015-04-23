@@ -69,16 +69,16 @@ def runExperiment(datasetName, maxDepth):
         "\nMax depth: " + str(maxDepth) \
         )
     # load data into table
-    irisDataTable = Orange.data.Table(datasetName)
+    originalDataTable = Orange.data.Table(datasetName)
     # create decision tree
-    treeClassifier = Orange.classification.tree.TreeLearner(irisDataTable, store_instances=True, max_depth=maxDepth)
+    treeClassifier = Orange.classification.tree.TreeLearner(originalDataTable, store_instances=True, max_depth=maxDepth)
     # interpolate new data
     leafNodes = TREE.getLeafNodes(treeClassifier.tree)
     newData = []
     for leaf in leafNodes:
-        newData += interpolateLeafData(irisDataTable, leaf)
+        newData += interpolateLeafData(originalDataTable, leaf)
     # create data table with only the new data
-    newDataTable = Orange.data.Table(irisDataTable.domain)
+    newDataTable = Orange.data.Table(originalDataTable.domain)
     for item in newData:
         newDataTable.append(item)
     # build another decision tree using only the new instances
@@ -89,7 +89,7 @@ def runExperiment(datasetName, maxDepth):
         TREE.outputTreeToDotFile(treeClassifier, RESULT_FILE_DIRECTORY, filePrefix=prefix + 'original')
         TREE.outputTreeToDotFile(newTreeClassifier, RESULT_FILE_DIRECTORY, filePrefix=prefix + 'new')
     # compare accuracy of decision trees
-    return compareTrees(treeClassifier, newTreeClassifier, irisDataTable, newDataTable, "Original", "New")
+    return compareTrees(treeClassifier, newTreeClassifier, originalDataTable, newDataTable, "Original", "New")
     
 def outputResultSummary(results):
     if len(results) > 0:
