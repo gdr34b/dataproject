@@ -1,0 +1,15 @@
+digraph G {
+"bg==" [ shape=oval label="physician-fee-freeze"]
+"bg==" -> "bi0w" [ label="n" ]
+"bi0w" [ shape=oval label="export-administration-act-south-africa"]
+"bi0w" -> "bi0wLTA=" [ label="n" ]
+"bi0wLTA=" [ shape=oval label="democrat (99.57%)"]
+"bi0w" -> "bi0wLTE=" [ label="y" ]
+"bi0wLTE=" [ shape=oval label="democrat (99.13%)"]
+"bg==" -> "bi0x" [ label="y" ]
+"bi0x" [ shape=oval label="synfuels-corporation-cutback"]
+"bi0x" -> "bi0xLTA=" [ label="n" ]
+"bi0xLTA=" [ shape=oval label="republican (92.32%)"]
+"bi0x" -> "bi0xLTE=" [ label="y" ]
+"bi0xLTE=" [ shape=oval label="republican (65.10%)"]
+}

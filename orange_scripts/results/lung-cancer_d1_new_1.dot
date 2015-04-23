@@ -1,0 +1,7 @@
+digraph G {
+"bg==" [ shape=oval label="a1"]
+"bg==" -> "bi0w" [ label="0" ]
+"bi0w" [ shape=oval label="2 (58.33%)"]
+"bg==" -> "bi0x" [ label="1" ]
+"bi0x" [ shape=oval label="1 (100.00%)"]
+}

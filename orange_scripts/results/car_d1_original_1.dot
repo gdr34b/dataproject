@@ -1,0 +1,9 @@
+digraph G {
+"bg==" [ shape=oval label="safety"]
+"bg==" -> "bi0w" [ label="low" ]
+"bi0w" [ shape=oval label="unacc (100.00%)"]
+"bg==" -> "bi0x" [ label="med" ]
+"bi0x" [ shape=oval label="unacc (61.98%)"]
+"bg==" -> "bi0y" [ label="high" ]
+"bi0y" [ shape=oval label="unacc (48.09%)"]
+}

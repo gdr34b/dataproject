@@ -1,0 +1,11 @@
+digraph G {
+"bg==" [ shape=oval label="capital-loss"]
+"bg==" -> "bi0w" [ label="<=0.713" ]
+"bi0w" [ shape=oval label=">50K (100.00%)"]
+"bg==" -> "bi0x" [ label=">0.713" ]
+"bi0x" [ shape=oval label="education-num"]
+"bi0x" -> "bi0xLTA=" [ label="<=2.049" ]
+"bi0xLTA=" [ shape=oval label=">50K (100.00%)"]
+"bi0x" -> "bi0xLTE=" [ label=">2.049" ]
+"bi0xLTE=" [ shape=oval label="<=50K (80.35%)"]
+}

@@ -1,0 +1,11 @@
+digraph G {
+"bg==" [ shape=oval label="petal length"]
+"bg==" -> "bi0w" [ label="<=2.304" ]
+"bi0w" [ shape=oval label="Iris-setosa (100.00%)"]
+"bg==" -> "bi0x" [ label=">2.304" ]
+"bi0x" [ shape=oval label="petal width"]
+"bi0x" -> "bi0xLTA=" [ label="<=1.511" ]
+"bi0xLTA=" [ shape=oval label="Iris-versicolor (100.00%)"]
+"bi0x" -> "bi0xLTE=" [ label=">1.511" ]
+"bi0xLTE=" [ shape=oval label="Iris-virginica (95.83%)"]
+}

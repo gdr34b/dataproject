@@ -1,0 +1,7 @@
+digraph G {
+"bg==" [ shape=oval label="capital-gain"]
+"bg==" -> "bi0w" [ label="<=7073.500" ]
+"bi0w" [ shape=oval label="<=50K (79.59%)"]
+"bg==" -> "bi0x" [ label=">7073.500" ]
+"bi0x" [ shape=oval label=">50K (100.00%)"]
+}

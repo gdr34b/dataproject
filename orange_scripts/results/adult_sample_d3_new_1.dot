@@ -1,0 +1,15 @@
+digraph G {
+"bg==" [ shape=oval label="capital-gain"]
+"bg==" -> "bi0w" [ label="<=6720.471" ]
+"bi0w" [ shape=oval label="education-num"]
+"bi0w" -> "bi0wLTA=" [ label="<=2.101" ]
+"bi0wLTA=" [ shape=oval label=">50K (100.00%)"]
+"bi0w" -> "bi0wLTE=" [ label=">2.101" ]
+"bi0wLTE=" [ shape=oval label="capital-loss"]
+"bi0wLTE=" -> "bi0wLTEtMA==" [ label="<=2345.015" ]
+"bi0wLTEtMA==" [ shape=oval label="<=50K (84.35%)"]
+"bi0wLTE=" -> "bi0wLTEtMQ==" [ label=">2345.015" ]
+"bi0wLTEtMQ==" [ shape=oval label=">50K (100.00%)"]
+"bg==" -> "bi0x" [ label=">6720.471" ]
+"bi0x" [ shape=oval label=">50K (100.00%)"]
+}

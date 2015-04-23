@@ -1,0 +1,7 @@
+digraph G {
+"bg==" [ shape=oval label="physician-fee-freeze"]
+"bg==" -> "bi0w" [ label="n" ]
+"bi0w" [ shape=oval label="democrat (98.52%)"]
+"bg==" -> "bi0x" [ label="y" ]
+"bi0x" [ shape=oval label="republican (90.45%)"]
+}
