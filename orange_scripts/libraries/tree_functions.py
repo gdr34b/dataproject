@@ -17,29 +17,34 @@ def getLeafNodes(node):
         leafNodes.append(node)
     return leafNodes
     
-def getValueRanges(leaf):
+def getAllValues(leaf):
+    allValues = None
     if len(leaf.instances) > 0:
-        valueLists = []
+        allValues = []
         for value in leaf.instances[0]:
-            valueLists.append([])
-        # get possible values
+            allValues.append([])
         for item in leaf.instances:
             for i in range(len(item)):
-                valueLists[i].append(item[i])
+                allValues[i].append(item[i])
+    return allValues
+    
+def getValueRanges(leaf):
+    allValues = getAllValues(leaf)
+    if allValues is not None:
         # build ranges from possible values
         valueRanges = []
-        for eachList in valueLists:
+        for eachList in allValues:
             # for continuous variables, store min and max data
             if eachList[0].var_type == Orange.feature.Type.Continuous:
                 valueRanges.append({ \
                     'type': Orange.feature.Type.Continuous, \
                     'min': min(eachList), \
                     'max': max(eachList)})
-            # else, store all possible values
+            # else, store all values
             else:
                 valueRanges.append({ \
                     'type': eachList[0].var_type, \
-                    'values': set([str(x) for x in eachList])})
+                    'values': [str(x) for x in eachList]})
         return valueRanges
         
 def outputTreeToDotFile(treeClassifier, resultFileDirectory, filePrefix=''):
@@ -50,9 +55,9 @@ def outputTreeToDotFile(treeClassifier, resultFileDirectory, filePrefix=''):
     dotFileName = filePrefix + "_" + str(fileNumber) + ".dot"
     treeClassifier.dot(file_name=resultFileDirectory + dotFileName, leaf_shape="oval", node_shape="oval")
     
-def getModelAccuracy(treeClassifier, data):
+def getModelAccuracy(treeClassifier, dataTable):
     correct = 0
-    for item in data:
+    for item in dataTable:
         if treeClassifier(item) == item.get_class():
             correct += 1
-    return float(correct) / float(len(data))
+    return float(correct) / float(len(dataTable))
