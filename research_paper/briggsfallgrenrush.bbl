@@ -5,4 +5,34 @@ M.~Bowman, S.~K. Debray, and L.~L. Peterson.
 \newblock Reasoning about naming systems.
 \newblock {\em ACM Trans. Program. Lang. Syst.}, 15(5):795--825, November 1993.
 
+\bibitem{floater1996multistep}
+M.~S. Floater and A.~Iske.
+\newblock Multistep scattered data interpolation using compactly supported
+  radial basis functions.
+\newblock {\em Journal of Computational and Applied Mathematics}, 73(1):65--78,
+  1996.
+
+\bibitem{franke1982scattered}
+R.~Franke.
+\newblock Scattered data interpolation: Tests of some methods.
+\newblock {\em Mathematics of computation}, 38(157):181--200, 1982.
+
+\bibitem{franke1982smooth}
+R.~Franke.
+\newblock Smooth interpolation of scattered data by local thin plate splines.
+\newblock {\em Computers \& Mathematics with Applications}, 8(4):273--281,
+  1982.
+
+\bibitem{jeffrey2001using}
+S.~J. Jeffrey, J.~O. Carter, K.~B. Moodie, and A.~R. Beswick.
+\newblock Using spatial interpolation to construct a comprehensive archive of
+  australian climate data.
+\newblock {\em Environmental Modelling \& Software}, 16(4):309--330, 2001.
+
+\bibitem{zhao2005improvements}
+M.~Zhao, F.~A. Heinsch, R.~R. Nemani, and S.~W. Running.
+\newblock Improvements of the modis terrestrial gross and net primary
+  production global data set.
+\newblock {\em Remote sensing of Environment}, 95(2):164--176, 2005.
+
 \end{thebibliography}
