@@ -17,12 +17,6 @@ R.~Franke.
 \newblock Scattered data interpolation: Tests of some methods.
 \newblock {\em Mathematics of computation}, 38(157):181--200, 1982.
 
-\bibitem{franke1982smooth}
-R.~Franke.
-\newblock Smooth interpolation of scattered data by local thin plate splines.
-\newblock {\em Computers \& Mathematics with Applications}, 8(4):273--281,
-  1982.
-
 \bibitem{jeffrey2001using}
 S.~J. Jeffrey, J.~O. Carter, K.~B. Moodie, and A.~R. Beswick.
 \newblock Using spatial interpolation to construct a comprehensive archive of
