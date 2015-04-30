@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.2)  28 APR 2015 19:08
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.2)  30 APR 2015 17:29
 entering extended mode
 **briggsfallgrenrush.tex
 (C:\Users\Dragon\Desktop\dataproject\research_paper\briggsfallgrenrush.tex
@@ -269,23 +269,19 @@ LaTeX Font Info:    Try loading font information for U+lasy on input line 113.
 
 ("C:\Program Files (x86)\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
-)
-Overfull \hbox (10.34447pt too wide) in paragraph at lines 139--140
-\T1/aer/m/n/9 blend-ing method, fi-nite el-e-ment based method, Fo-ley's method
-,
- []
-
-[1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
+) [1{C:/ProgramData/MiKTeX/2.9/pdftex/config/pdftex.map}
 
 
 ]
-(C:\Users\Dragon\Desktop\dataproject\research_paper\briggsfallgrenrush.bbl)
-[2] [3]
+(C:\Users\Dragon\Desktop\dataproject\research_paper\briggsfallgrenrush.bbl
+[2]) [3
+
+]
 (C:\Users\Dragon\Desktop\dataproject\research_paper\briggsfallgrenrush.aux) ) 
 Here is how much of TeX's memory you used:
  2984 strings out of 493921
- 35807 string characters out of 3144874
- 116577 words of memory out of 3000000
+ 35814 string characters out of 3144874
+ 119577 words of memory out of 3000000
  6229 multiletter control sequences out of 15000+200000
  48375 words of font info for 65 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
@@ -302,8 +298,7 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files (x86)/MiKTeX
 s/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
 urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/u
 tmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-
-Output written on briggsfallgrenrush.pdf (3 pages, 139062 bytes).
+Output written on briggsfallgrenrush.pdf (3 pages, 140443 bytes).
 PDF statistics:
  57 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)

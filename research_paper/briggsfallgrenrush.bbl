@@ -1,9 +1,10 @@
 \begin{thebibliography}{1}
 
-\bibitem{bowman:reasoning}
-M.~Bowman, S.~K. Debray, and L.~L. Peterson.
-\newblock Reasoning about naming systems.
-\newblock {\em ACM Trans. Program. Lang. Syst.}, 15(5):795--825, November 1993.
+\bibitem{caruso1998interpolation}
+C.~Caruso and F.~Quarta.
+\newblock Interpolation methods comparison.
+\newblock {\em Computers \& Mathematics with Applications}, 35(12):109--126,
+  1998.
 
 \bibitem{floater1996multistep}
 M.~S. Floater and A.~Iske.
