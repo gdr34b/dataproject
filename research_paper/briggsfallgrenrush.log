@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.2)  30 APR 2015 17:29
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9) (preloaded format=pdflatex 2015.4.2)  2 MAY 2015 18:48
 entering extended mode
 **briggsfallgrenrush.tex
 (C:\Users\Dragon\Desktop\dataproject\research_paper\briggsfallgrenrush.tex
@@ -279,11 +279,11 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 ]
 (C:\Users\Dragon\Desktop\dataproject\research_paper\briggsfallgrenrush.aux) ) 
 Here is how much of TeX's memory you used:
- 2984 strings out of 493921
- 35814 string characters out of 3144874
- 119577 words of memory out of 3000000
- 6229 multiletter control sequences out of 15000+200000
- 48375 words of font info for 65 fonts, out of 3000000 for 9000
+ 2982 strings out of 493921
+ 35792 string characters out of 3144874
+ 118577 words of memory out of 3000000
+ 6228 multiletter control sequences out of 15000+200000
+ 47239 words of font info for 64 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  41i,12n,35p,894b,249s stack positions out of 5000i,500n,10000p,200000b,50000s
 {C
@@ -297,10 +297,10 @@ eX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files (x86)/MiKTeX
 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/font
 s/type1/urw/helvetic/uhvr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/
 urw/times/utmb8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/u
-tmr8a.pfb><C:/Program Files (x86)/MiKTeX 2.9/fonts/type1/urw/times/utmri8a.pfb>
-Output written on briggsfallgrenrush.pdf (3 pages, 140443 bytes).
+tmr8a.pfb>
+Output written on briggsfallgrenrush.pdf (3 pages, 134288 bytes).
 PDF statistics:
- 57 PDF objects out of 1000 (max. 8388607)
+ 53 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 

@@ -122,21 +122,13 @@ One class of data is measured or simulated data with error estimation. This data
 \keywords{data mining, sparse data, interpolation}
 
 \section{Introduction}
-Outline goes here.
-\begin{itemize}
-    \item The first item
-    \item The second item
-    \item The third etc \ldots
-\end{itemize}
+Certain data types consist of discrete values within continuous dimensions, for which the values are representative of certain classifications, but can be limited in the number of data instances available. Furthermore, it can be costly or difficult to acquire additional data points, but availability of more data can help to clarify trends within the data. 
 
-Text text text text text text. Text text text text text text text. Text text text text text. Text text text text text text text text. Text text text text text text. Text text text text text text text. Text text text text text. Text text text text text text text text. Text text text text text text. Text text text text text text text. Text text text text text. Text text text text text text text text.
+Interpolation aims to solve this issue by generating new points according to the patterns established by existing data. Prior forms of interpolation all work off of utilizing different functions to fit the pattern of values in the data. This process can be ineffective if different dimensions or classifications of the data do not fit to a single formula, such as linear, logarithmic, polynomial, et cetera, as then certain formulas would only perform accurately for specific segments of the data.
 
-\subsection{Stuff}
-This is a subsection.
-\subsubsection{More Stuff}
-This is a subsubsection.
+Our solution to this issue is to model the data using data mining methods in order to establish the different classifications within the data and then interpolate new values based upon the trends and distribution of values within each of the resulting classifications. Decision trees have been selected for the classification method.
 
-Text text text text text text. Text text text text text text text. Text text text text text. Text text text text text text text text. Text text text text text text. Text text text text text text text. Text text text text text. Text text text text text text text text. Text text text text text text. Text text text text text text text. Text text text text text. Text text text text text text text text.
+We aim to utilize the decision trees combined with interpolation to acquire more accurate results in data generation.
 
 \section{Related Work}
 Early works on the interpolation of scattered data evaluate a variety of different computational methods that focus on obtaining a smooth function $F(x, y)$ to follow the dataset. They utilize numerous different mathematical methods including the following: inverse distance weighted method, rectangle based blending method, triangle based blending method, finite element based method, Foley's method, global basis function type method, and modified Maude method \cite{franke1982scattered}. All of these techniques focus only on developing a function in order to interpolate scattered data sets.
@@ -238,8 +230,13 @@ While there was no clear trend in the results for this data source, accuracy was
 \section{Discussion}
 Another section.
 
+Text text text text text text. Text text text text text text text. Text text text text text. Text text text text text text text text. Text text text text text text. Text text text text text text text. Text text text text text. Text text text text text text text text. Text text text text text text. Text text text text text text text. Text text text text text. Text text text text text text text text.
+
 \section{Conclusion and Future Work}
 Last section.
+
+Text text text text text text. Text text text text text text text. Text text text text text. Text text text text text text text text. Text text text text text text. Text text text text text text text. Text text text text text. Text text text text text text text text. Text text text text text text. Text text text text text text text. Text text text text text. Text text text text text text text text.
+
 %\end{document}  % This is where a 'short' article might terminate
 
 %
