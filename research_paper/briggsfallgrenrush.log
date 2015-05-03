@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.7)  2 MAY 2015 21:49
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (MiKTeX 2.9 64-bit) (preloaded format=pdflatex 2015.1.7)  2 MAY 2015 23:27
 entering extended mode
 **briggsfallgrenrush.tex
 
@@ -232,45 +232,51 @@ Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1358.
 Package xcolor Info: Model `Gray' substituted by `gray' on input line 1359.
 Package xcolor Info: Model `wave' substituted by `hsb' on input line 1360.
 )
+("C:\Program Files\MiKTeX 2.9\tex\latex\tools\afterpage.sty"
+Package: afterpage 1995/10/27 v1.08 After-Page Package (DPC)
+\AP@output=\toks38
+\AP@partial=\box30
+\AP@footins=\box31
+)
 (C:\Users\firefokz\home\Documents\grad_school\classes\advanced_data_mining\data
 project\research_paper\briggsfallgrenrush.aux)
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 52.
-LaTeX Font Info:    ... okay on input line 52.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 53.
+LaTeX Font Info:    ... okay on input line 53.
 
 ("C:\Program Files\MiKTeX 2.9\tex\context\base\supp-pdf.mkii"
 [Loading MPS to PDF converter (version 2006.09.02).]
 \scratchcounter=\count110
 \scratchdimen=\dimen125
-\scratchbox=\box30
+\scratchbox=\box32
 \nofMPsegments=\count111
 \nofMParguments=\count112
-\everyMPshowfont=\toks38
+\everyMPshowfont=\toks39
 \MPscratchCnt=\count113
 \MPscratchDim=\dimen126
 \MPnumerator=\count114
 \makeMPintoPDFobject=\count115
-\everyMPtoPDFconversion=\toks39
+\everyMPtoPDFconversion=\toks40
 )
-LaTeX Font Info:    Try loading font information for U+msa on input line 113.
+LaTeX Font Info:    Try loading font information for U+msa on input line 114.
  ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsa.fd"
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 113.
+LaTeX Font Info:    Try loading font information for U+msb on input line 114.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\amsfonts\umsb.fd"
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-LaTeX Font Info:    Try loading font information for U+lasy on input line 113.
+LaTeX Font Info:    Try loading font information for U+lasy on input line 114.
 
 ("C:\Program Files\MiKTeX 2.9\tex\latex\base\ulasy.fd"
 File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
@@ -282,13 +288,118 @@ File: ulasy.fd 1998/08/17 v2.2e LaTeX symbol font definitions
 project\research_paper\briggsfallgrenrush.bbl [3]) [4
 
 ]
+<./images/adultSampleD5Original.png, id=24, 2205.23875pt x 641.39626pt>
+File: ./images/adultSampleD5Original.png Graphic file (type png)
+
+<use ./images/adultSampleD5Original.png>
+Package pdftex.def Info: ./images/adultSampleD5Original.png used on input line 
+266.
+(pdftex.def)             Requested size: 503.99757pt x 146.58827pt.
+
+<./images/adultSampleD5New.png, id=26, 871.255pt x 641.39626pt>
+File: ./images/adultSampleD5New.png Graphic file (type png)
+
+<use ./images/adultSampleD5New.png>
+Package pdftex.def Info: ./images/adultSampleD5New.png used on input line 272.
+(pdftex.def)             Requested size: 386.50414pt x 284.53471pt.
+ [5 <C:/Users/firefokz/home/Documents/grad_school/classes/advanced_data_mining/
+dataproject/research_paper/images/adultSampleD5Original.png> <C:/Users/firefokz
+/home/Documents/grad_school/classes/advanced_data_mining/dataproject/research_p
+aper/images/adultSampleD5New.png>]
+<./images/carD2Original.png, id=32, 1163.34625pt x 292.09125pt>
+File: ./images/carD2Original.png Graphic file (type png)
+
+<use ./images/carD2Original.png>
+Package pdftex.def Info: ./images/carD2Original.png used on input line 280.
+(pdftex.def)             Requested size: 504.01015pt x 126.5461pt.
+
+<./images/carD2New.png, id=33, 1185.42876pt x 292.09125pt>
+File: ./images/carD2New.png Graphic file (type png)
+
+<use ./images/carD2New.png>
+Package pdftex.def Info: ./images/carD2New.png used on input line 286.
+(pdftex.def)             Requested size: 503.99048pt x 124.18393pt.
+ [6 <C:/Users/firefokz/home/Documents/grad_school/classes/advanced_data_mining/
+dataproject/research_paper/images/carD2Original.png> <C:/Users/firefokz/home/Do
+cuments/grad_school/classes/advanced_data_mining/dataproject/research_paper/ima
+ges/carD2New.png>]
+<./images/irisD5Original.png, id=39, 1396.21625pt x 641.39626pt>
+File: ./images/irisD5Original.png Graphic file (type png)
+
+<use ./images/irisD5Original.png>
+Package pdftex.def Info: ./images/irisD5Original.png used on input line 294.
+(pdftex.def)             Requested size: 504.00096pt x 231.52884pt.
+
+<./images/irisD5New.png, id=40, 697.60625pt x 524.96124pt>
+File: ./images/irisD5New.png Graphic file (type png)
+
+<use ./images/irisD5New.png>
+Package pdftex.def Info: ./images/irisD5New.png used on input line 300.
+(pdftex.def)             Requested size: 378.10684pt x 284.5322pt.
+ [7 <C:/Users/firefokz/home/Documents/grad_school/classes/advanced_data_mining/
+dataproject/research_paper/images/irisD5Original.png> <C:/Users/firefokz/home/D
+ocuments/grad_school/classes/advanced_data_mining/dataproject/research_paper/im
+ages/irisD5New.png>]
+<./images/lungCancerD5Original.png, id=47, 805.0075pt x 641.39626pt>
+File: ./images/lungCancerD5Original.png Graphic file (type png)
+
+<use ./images/lungCancerD5Original.png>
+Package pdftex.def Info: ./images/lungCancerD5Original.png used on input line 3
+08.
+(pdftex.def)             Requested size: 357.11557pt x 284.53471pt.
+
+<./images/lungCancerD5New.png, id=48, 406.51875pt x 524.96124pt>
+File: ./images/lungCancerD5New.png Graphic file (type png)
+
+<use ./images/lungCancerD5New.png>
+Package pdftex.def Info: ./images/lungCancerD5New.png used on input line 314.
+(pdftex.def)             Requested size: 220.33563pt x 284.5322pt.
+
+<./images/ticTacToeD2Original.png, id=49, 1452.42625pt x 292.09125pt>
+File: ./images/ticTacToeD2Original.png Graphic file (type png)
+
+<use ./images/ticTacToeD2Original.png>
+Package pdftex.def Info: ./images/ticTacToeD2Original.png used on input line 32
+2.
+(pdftex.def)             Requested size: 503.99084pt x 101.35544pt.
+
+<./images/ticTacToeD2New.png, id=50, 1449.415pt x 292.09125pt>
+File: ./images/ticTacToeD2New.png Graphic file (type png)
+
+<use ./images/ticTacToeD2New.png>
+Package pdftex.def Info: ./images/ticTacToeD2New.png used on input line 328.
+(pdftex.def)             Requested size: 503.98541pt x 101.56491pt.
+ [8 <C:/Users/firefokz/home/Documents/grad_school/classes/advanced_data_mining/
+dataproject/research_paper/images/lungCancerD5Original.png> <C:/Users/firefokz/
+home/Documents/grad_school/classes/advanced_data_mining/dataproject/research_pa
+per/images/lungCancerD5New.png>] [9 <C:/Users/firefokz/home/Documents/grad_scho
+ol/classes/advanced_data_mining/dataproject/research_paper/images/ticTacToeD2Or
+iginal.png> <C:/Users/firefokz/home/Documents/grad_school/classes/advanced_data
+_mining/dataproject/research_paper/images/ticTacToeD2New.png>]
+<./images/votingD3Original.png, id=61, 1944.26375pt x 408.52625pt>
+File: ./images/votingD3Original.png Graphic file (type png)
+
+<use ./images/votingD3Original.png>
+Package pdftex.def Info: ./images/votingD3Original.png used on input line 336.
+(pdftex.def)             Requested size: 503.98364pt x 105.89641pt.
+
+<./images/votingD3New.png, id=62, 1934.22626pt x 408.52625pt>
+File: ./images/votingD3New.png Graphic file (type png)
+
+<use ./images/votingD3New.png>
+Package pdftex.def Info: ./images/votingD3New.png used on input line 342.
+(pdftex.def)             Requested size: 503.97899pt x 106.44496pt.
+ [10 <C:/Users/firefokz/home/Documents/grad_school/classes/advanced_data_mining
+/dataproject/research_paper/images/votingD3Original.png> <C:/Users/firefokz/hom
+e/Documents/grad_school/classes/advanced_data_mining/dataproject/research_paper
+/images/votingD3New.png>]
 (C:\Users\firefokz\home\Documents\grad_school\classes\advanced_data_mining\data
 project\research_paper\briggsfallgrenrush.aux) ) 
 Here is how much of TeX's memory you used:
- 2982 strings out of 493921
- 35946 string characters out of 3147274
- 119577 words of memory out of 3000000
- 6228 multiletter control sequences out of 15000+200000
+ 3076 strings out of 493921
+ 38322 string characters out of 3147274
+ 120133 words of memory out of 3000000
+ 6305 multiletter control sequences out of 15000+200000
  47239 words of font info for 64 fonts, out of 3000000 for 9000
  841 hyphenation exceptions out of 8191
  41i,12n,35p,918b,249s stack positions out of 5000i,500n,10000p,200000b,50000s
@@ -302,9 +413,9 @@ les/MiKTeX 2.9/fonts/type1/public/amsfonts/cm/cmti9.pfb><C:/Program Files/MiKTe
 X 2.9/fonts/type1/urw/helvetic/uhvb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/ty
 pe1/urw/helvetic/uhvr8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/
 utmb8a.pfb><C:/Program Files/MiKTeX 2.9/fonts/type1/urw/times/utmr8a.pfb>
-Output written on briggsfallgrenrush.pdf (4 pages, 138514 bytes).
+Output written on briggsfallgrenrush.pdf (10 pages, 826531 bytes).
 PDF statistics:
- 56 PDF objects out of 1000 (max. 8388607)
+ 101 PDF objects out of 1000 (max. 8388607)
  0 named destinations out of 1000 (max. 500000)
- 1 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 61 words of extra memory for PDF output out of 10000 (max. 10000000)
 

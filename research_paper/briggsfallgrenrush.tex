@@ -48,6 +48,7 @@
 \documentclass{sig-alternate}
 
 \usepackage[table]{xcolor}
+\usepackage{afterpage}
 
 \begin{document}
 %
@@ -254,5 +255,94 @@ For any decision node in our algorithm, there is also no consideration of the po
 % to resolve all references
 %
 % ACM needs 'a single self-contained file'!
+
+\appendix
+\section{Example Decision Trees}
+In the following pages, we display some of the decision trees from our experiments. Each tree is labeled with the corresponding data set name, whether it was generated from the original or interpolated data, and the maximum depth. For each data set, we chose to display decision trees at the highest maximum depth that was viewable in this format. This is because some decision trees at depth five were impossible to examine when resized to fit on one page. This section is meant to demonstrate how the complexity of decision trees can vary depending on the data set, but it also provides a visual contrast of the decision tree structure for original versus interpolated data.
+
+\clearpage
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=1.00\textwidth,height=10cm,keepaspectratio]{./images/adultSampleD5Original.png}
+    \caption{adult\_sample - original - max depth 5}
+    \label{figure:adultSampleD5Original}
+\end{figure*}
+\begin{figure*}[h]
+    \centering
+    \includegraphics[width=1.00\textwidth,height=10cm,keepaspectratio]{./images/adultSampleD5New.png}
+    \caption{adult\_sample - interpolated - max depth 5}
+    \label{figure:adultSampleD5New}
+\end{figure*}
+
+\clearpage
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=1.00\textwidth,height=10cm,keepaspectratio]{./images/carD2Original.png}
+    \caption{car - original - max depth 2}
+    \label{figure:carD2Original}
+\end{figure*}
+\begin{figure*}[h]
+    \centering
+    \includegraphics[width=1.00\textwidth,height=10cm,keepaspectratio]{./images/carD2New.png}
+    \caption{car - interpolated - max depth 2}
+    \label{figure:carD2New}
+\end{figure*}
+
+\clearpage
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=1.00\textwidth,height=10cm,keepaspectratio]{./images/irisD5Original.png}
+    \caption{iris - original - max depth 5}
+    \label{figure:irisD5Original}
+\end{figure*}
+\begin{figure*}[h]
+    \centering
+    \includegraphics[width=1.00\textwidth,height=10cm,keepaspectratio]{./images/irisD5New.png}
+    \caption{iris - interpolated - max depth 5}
+    \label{figure:irisD5New}
+\end{figure*}
+
+\clearpage
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=1.00\textwidth,height=10cm,keepaspectratio]{./images/lungCancerD5Original.png}
+    \caption{lung-cancer - original - max depth 5}
+    \label{figure:lungCancerD5Original}
+\end{figure*}
+\begin{figure*}[h]
+    \centering
+    \includegraphics[width=1.00\textwidth,height=10cm,keepaspectratio]{./images/lungCancerD5New.png}
+    \caption{lung-cancer - interpolated - max depth 5}
+    \label{figure:lungCancerD5New}
+\end{figure*}
+
+\afterpage{\clearpage}
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=1.00\textwidth,height=10cm,keepaspectratio]{./images/ticTacToeD2Original.png}
+    \caption{tic\_tac\_toe - original - max depth 2}
+    \label{figure:ticTacToeD2Original}
+\end{figure*}
+\begin{figure*}[h]
+    \centering
+    \includegraphics[width=1.00\textwidth,height=10cm,keepaspectratio]{./images/ticTacToeD2New.png}
+    \caption{tic\_tac\_toe - interpolated - max depth 2}
+    \label{figure:ticTacToeD2New}
+\end{figure*}
+
+\clearpage
+\begin{figure*}[!t]
+    \centering
+    \includegraphics[width=1.00\textwidth,height=10cm,keepaspectratio]{./images/votingD3Original.png}
+    \caption{voting - original - max depth 3}
+    \label{figure:votingD3Original}
+\end{figure*}
+\begin{figure*}[h]
+    \centering
+    \includegraphics[width=1.00\textwidth,height=10cm,keepaspectratio]{./images/votingD3New.png}
+    \caption{voting - interpolated - max depth 3}
+    \label{figure:votingD3New}
+\end{figure*}
+
 % That's all folks!
 \end{document}
